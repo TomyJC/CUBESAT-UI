@@ -144,26 +144,28 @@ Rectangle {
 
         // Indicador de conexión
         Rectangle {
-            Layout.preferredHeight: 30
-            Layout.preferredWidth: indicadorRow.implicitWidth + 20
-            color: "transparent"
-            border.color: Theme.bordeOscuro
-            border.width: 1
-            radius: Theme.radioPequeno
+                    Layout.preferredHeight: 30
+                    Layout.preferredWidth: indicadorRow.implicitWidth + 20
+                    color: Theme.fondoTarjeta
+                    border.color: Theme.bordeSuave
+                    border.width: Theme.bordeAnchoPequeno
+                    radius: Theme.radioPequeno
 
-            RowLayout {
-                id: indicadorRow
-                anchors.centerIn: parent
-                spacing: 8
+                    RowLayout {
+                        id: indicadorRow
+                        anchors.centerIn: parent
+                        spacing: 8
 
-                IndicadorLED {
-                    estado: root.estadoConexion
-                    etiqueta: root.estaConectado  ? "CONECTADO"
-                            : root.estaConectando ? "CONECTANDO..."
-                            : "DESCONECTADO"
+                        IndicadorLED {
+                            estado: root.estadoConexion
+                            etiqueta: root.estaConectado  ? "CONECTADO"
+                                    : root.estaConectando ? "CONECTANDO..."
+                                    : "DESCONECTADO"
+                        }
+                    }
                 }
-            }
-        }
+
+
 
         // Selector de puerto
         ComboBox {
