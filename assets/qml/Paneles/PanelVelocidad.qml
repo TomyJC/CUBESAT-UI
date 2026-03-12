@@ -42,7 +42,7 @@ TarjetaDeDatos {
                     font.pixelSize: Theme.fuenteH2
                     font.bold: true
                     font.family: Theme.fuenteMono
-                    color: Theme.textoCyan
+                    color: Theme.textoPrincipal
                 }
 
                 Text {

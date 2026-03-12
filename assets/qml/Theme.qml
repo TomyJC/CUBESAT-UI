@@ -27,13 +27,17 @@ QtObject {
     readonly property color neutro:      "#4a5568"
 
     // Texto
-    readonly property color textoOscuro:   "#e0e6ed"
-    readonly property color textoMedio:    "#8899aa"
-    readonly property color textoClaro:    "#4a5568"
-    readonly property color textoBlanco:   "#ffffff"
-    readonly property color textoConsola:  "#00ff88"
-    readonly property color textoCyan:     "#00e5ff"
-    readonly property color textoValor:    "#e0e6ed"
+    readonly property color textoPrincipal: "#e0e6ed"   // Texto principal (valores, datos)
+    readonly property color textoMedio:     "#8899aa"   // Texto secundario (subtítulos, unidades)
+    readonly property color textoTenue:     "#667788"   // Labels, etiquetas de campos
+    readonly property color textoBlanco:    "#ffffff"   // Texto máximo contraste
+    readonly property color textoConsola:   "#00ff88"
+    readonly property color textoCyan:      "#00e5ff"   // Solo para 1-2 valores "hero"
+
+    // Aliases de compatibilidad
+    readonly property color textoOscuro: textoPrincipal
+    readonly property color textoClaro:  textoTenue
+    readonly property color textoValor:  textoPrincipal
 
     // Bordes
     readonly property color bordeOscuro:     Qt.rgba(0, 0.898, 1, 0.15)
@@ -55,14 +59,16 @@ QtObject {
     readonly property color ejeZ: "#339af0"
 
     // ===== TIPOGRAFÍA =====
-    readonly property int fuenteH1:      22
-    readonly property int fuenteH2:      18
-    readonly property int fuenteH3:      14
-    readonly property int fuenteBody:    12
-    readonly property int fuenteSmall:   10
-    readonly property int fuenteCaption: 9
+    // Escala ampliada para dashboard de misión
+    readonly property int fuenteH1:      26
+    readonly property int fuenteH2:      20
+    readonly property int fuenteH3:      16
+    readonly property int fuenteBody:    13
+    readonly property int fuenteSmall:   11
+    readonly property int fuenteCaption: 10
     readonly property int fuenteValorGrande: 32
-    readonly property string fuenteMono: "Consolas, Courier, monospace"
+    readonly property string fuenteMono: "Consolas"
+    readonly property string fuenteUI:   "Segoe UI"
 
     // ===== DIMENSIONES =====
     readonly property int radio:              8

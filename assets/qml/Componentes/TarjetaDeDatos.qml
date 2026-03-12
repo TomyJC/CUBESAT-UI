@@ -37,12 +37,12 @@ Rectangle {
 
             Text {
                 text: root.titulo
-                font.pixelSize: Theme.fuenteCaption
+                font.pixelSize: Theme.fuenteSmall
                 font.bold: true
                 font.letterSpacing: 1.5
+                font.family: Theme.fuenteUI
                 color: root.colorTitulo
                 Layout.fillWidth: true
-                opacity: 0.8
             }
         }
 

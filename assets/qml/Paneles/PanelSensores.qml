@@ -120,7 +120,7 @@ TarjetaDeDatos {
                 Text {
                     text: root.presion >= 0 ? root.presion.toFixed(1) + " hPa" : "--"
                     font.pixelSize: Theme.fuenteSmall; font.family: Theme.fuenteMono; font.bold: true
-                    color: Theme.textoCyan
+                    color: Theme.textoPrincipal
                 }
             }
 

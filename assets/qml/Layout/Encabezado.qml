@@ -91,6 +91,7 @@ Rectangle {
                 font.bold: true
                 color: Theme.textoCyan
                 font.letterSpacing: 2
+                font.family: Theme.fuenteUI
             }
 
             RowLayout {
@@ -129,17 +130,6 @@ Rectangle {
             sourceSize.height: 65
         }
 
-        // Espaciador
-        Item { Layout.fillWidth: true }
-
-        // Título
-        Text {
-            text: "GROUND STATION"
-            font.pixelSize: Theme.fuenteH2
-            font.letterSpacing: 4
-            color: Theme.textoMedio
-            font.bold: true
-        }
 
         // Espaciador
         Item { Layout.fillWidth: true }

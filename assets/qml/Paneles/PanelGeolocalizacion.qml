@@ -30,7 +30,7 @@ TarjetaDeDatos {
                       : "LAT --          LON --"
                 font.pixelSize: Theme.fuenteSmall
                 font.family: Theme.fuenteMono
-                color: root.datosDisponibles ? Theme.textoCyan : Theme.textoClaro
+                color: root.datosDisponibles ? Theme.textoPrincipal : Theme.textoTenue
                 Layout.fillWidth: true
             }
 

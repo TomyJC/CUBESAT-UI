@@ -118,7 +118,7 @@ TarjetaDeDatos {
                 text: root.tiempoMision
                 font.pixelSize: Theme.fuenteSmall; font.bold: true
                 font.family: Theme.fuenteMono
-                color: Theme.textoCyan
+                color: Theme.textoPrincipal
                 Layout.alignment: Qt.AlignRight
             }
 
