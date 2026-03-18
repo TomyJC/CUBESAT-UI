@@ -38,7 +38,7 @@ ApplicationWindow {
     ColumnLayout {
         anchors.fill: parent
         anchors.margins: Theme.margenPequeno
-        spacing: 0
+        spacing: 8
 
         // Header
         Encabezado {
