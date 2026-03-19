@@ -225,7 +225,7 @@ TarjetaDeDatos {
                     Text {
                         text: root.datosDisponibles && root.cpuTemp >= 0
                               ? root.cpuTemp.toFixed(1) : "--"
-                        font.pixelSize: Theme.fuenteH2
+                        font.pixelSize: Theme.fuenteH3
                         font.bold: true
                         font.family: Theme.fuenteMono
                         color: !root.datosDisponibles      ? Theme.textoMedio
@@ -256,7 +256,7 @@ TarjetaDeDatos {
                     spacing: 3
                     Text {
                         text: root.datosDisponibles ? root.rssi.toFixed(0) : "--"
-                        font.pixelSize: Theme.fuenteH2
+                        font.pixelSize: Theme.fuenteH3
                         font.bold: true
                         font.family: Theme.fuenteMono
                         color: root.datosDisponibles ? colorRssi(root.rssi) : Theme.textoMedio
@@ -283,7 +283,7 @@ TarjetaDeDatos {
                     spacing: 3
                     Text {
                         text: root.datosDisponibles ? root.snr.toFixed(1) : "--"
-                        font.pixelSize: Theme.fuenteH2
+                        font.pixelSize: Theme.fuenteH3
                         font.bold: true
                         font.family: Theme.fuenteMono
                         color: root.datosDisponibles ? Theme.textoPrincipal : Theme.textoMedio
@@ -308,9 +308,11 @@ TarjetaDeDatos {
                 }
 
                 // Mini-indicador de barras de señal (4 barras)
+                // height = barra más alta: 8 + 3*5 = 23px
                 Row {
                     spacing: 3
-                    anchors.verticalCenter: parent.verticalCenter
+                    height: 23
+                    Layout.alignment: Qt.AlignLeft | Qt.AlignVCenter
 
                     Repeater {
                         model: 4
